@@ -14,9 +14,10 @@ struct PersistenceController {
     static let preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+        for i in 0..<10 {
+            let newSolve = Solve(context: viewContext)
+            newSolve.timestamp = Date().addingTimeInterval(-Double(i * 3600))
+            newSolve.durationMillis = Int64.random(in: 15000...45000)
         }
         do {
             try viewContext.save()
@@ -29,10 +30,10 @@ struct PersistenceController {
         return result
     }()
 
-    let container: NSPersistentCloudKitContainer
+    let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentCloudKitContainer(name: "speedster")
+        container = NSPersistentContainer(name: "speedster")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }

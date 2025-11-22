@@ -24,7 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		64A64C332ED24BC500DB1A9C /* speedster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speedster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A64C332ED24BC500DB1A9C /* Speedster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speedster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A64C472ED24BC500DB1A9C /* speedsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = speedsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A64C512ED24BC500DB1A9C /* speedsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = speedsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,7 +98,7 @@
 		64A64C342ED24BC500DB1A9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				64A64C332ED24BC500DB1A9C /* speedster.app */,
+				64A64C332ED24BC500DB1A9C /* Speedster.app */,
 				64A64C472ED24BC500DB1A9C /* speedsterTests.xctest */,
 				64A64C512ED24BC500DB1A9C /* speedsterUITests.xctest */,
 			);
@@ -127,7 +127,7 @@
 			packageProductDependencies = (
 			);
 			productName = speedster;
-			productReference = 64A64C332ED24BC500DB1A9C /* speedster.app */;
+			productReference = 64A64C332ED24BC500DB1A9C /* Speedster.app */;
 			productType = "com.apple.product-type.application";
 		};
 		64A64C462ED24BC500DB1A9C /* speedsterTests */ = {
@@ -286,7 +286,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = speedster/speedster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -305,7 +304,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = impulse.codes.speedster;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Speedster;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -320,7 +319,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = speedster/speedster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -339,7 +337,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = impulse.codes.speedster;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Speedster;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
